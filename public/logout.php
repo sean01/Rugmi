@@ -1,4 +1,5 @@
 <?php 
+
 require_once '../libraries/auth.lib.php';
 require_once '../libraries/url.lib.php';
 
