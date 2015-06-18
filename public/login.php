@@ -21,7 +21,7 @@ if($_POST){
 	$success = $user->authenticate();
 
 	if($success){
-		Login::log_in($user->id);
+		Auth::log_in($user->id);
 
 		URL::redirect('index.php');
 	}
