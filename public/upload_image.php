@@ -30,7 +30,7 @@ if($_FILES){
 		$My_image->caption = $_POST ['caption'];
 		$My_image->title = $_POST ['title'];
 		// $My_image->date    = date('Y-m-d H:i:s');
-		// $My_image->user_id = Login::user_id();
+		$My_image->user_id = Auth::user_id();
 
 		$My_image->save();
 

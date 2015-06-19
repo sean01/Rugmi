@@ -12,26 +12,19 @@
  	</div>
 	
 	<div>
-		<? Form::open(); ?>
-		
-			<div class="form-group">
-				<?= Form::label('edit', 'Edit') ?>
-				<?= Form::text('edit') ?>
-			</div>
-
-			<div class="form-group">
-				<?= Form::label('delete', 'Delete') ?>
-				<?= Form::text('delete') ?>
-			</div>
-
-			<?= Form::submit(); ?>
+	
 
 			<? if(Auth::is_logged_in() && $image->user_id == Auth::user_id()): ?>
-				<a href="delete_image.php?id=<?= $content->id ?>">Delete</a>
+				<a href="delete_image.php?id=<?= $image->id ?>" ></i>Delete</a>
+				<a href="edit_image.php?id=<?= $image->id ?>">Edit</a>
+
 			<? endif; ?>
 
-		<? Form::close(); ?>
+
+
+	
 	</div>
+	
 
 	
 

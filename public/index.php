@@ -15,6 +15,9 @@ require_once '../models/images.collection.php';
 $user = new User();
 $user->load($_SESSION['user']['id']);
 
+$images = new My_Images_Collection([
+	'deleted' => '0'
+	]);
 
 
 

@@ -20,4 +20,5 @@ $My_image->delete();
 
 #3. Redirect
 
-URL::redirect('index.php');
+URL::redirect('view_image.php');
+
